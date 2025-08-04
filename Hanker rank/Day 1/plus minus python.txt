@@ -1,0 +1,19 @@
+
+def plusMinus(arr):
+    # Write your code here
+    total = len(arr)
+    positive = 0
+    negative = 0
+    zero =0
+    
+    for num in arr:
+        if num > 0:
+            positive += 1
+        elif num < 0:
+            negative += 1
+        else :
+            zero += 1
+            
+    print("{:.6f}".format(positive / total))
+    print("{:.6f}".format(negative / total))
+    print("{:.6f}".format(zero / total))
