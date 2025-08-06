@@ -1,0 +1,4 @@
+def pangrams(s):
+    # Write your code here
+    s=s.lower()
+    return "pangram" if set("abcdefghijklmnopqrstuvwxyz") <=set(s) else "not pangram"

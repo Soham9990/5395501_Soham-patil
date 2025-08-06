@@ -1,0 +1,10 @@
+def diagonalDifference(arr):
+    left_diagonal = 0
+    right_diagonal = 0
+    n = len(arr)
+
+    for i in range(n):
+        left_diagonal += arr[i][i]
+        right_diagonal += arr[i][n - i - 1]
+
+    return abs(left_diagonal - right_diagonal)
